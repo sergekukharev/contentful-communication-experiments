@@ -1,0 +1,41 @@
+{
+  "name": "sergekukharev/php-project-boilerplate",
+  "description": "Start your PHP projects quickly",
+  "type": "project",
+  "require": {
+    "php": ">=7"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.8",
+    "squizlabs/php_codesniffer": "^2.8",
+    "phpmd/phpmd": "^2.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "Sergekukharev\\ProjectNamespace\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Sergekukharev\\ProjectNamespace\\": "test/"
+    }
+  },
+  "license": "Apache License 2.0",
+  "authors": [
+    {
+      "name": "Serge Kukharev",
+      "email": "serge.kukharev@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "scripts": {
+    "build": [
+      "@test",
+      "@code-style",
+      "@find-mess"
+    ],
+    "test": "./vendor/bin/phpunit",
+    "code-style": "./vendor/bin/phpcs src/ --standard=PSR2",
+    "find-mess": "./vendor/bin/phpmd src/ text phpmd-ruleset"
+  }
+}
