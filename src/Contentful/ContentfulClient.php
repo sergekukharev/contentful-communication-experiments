@@ -6,21 +6,21 @@ use Contentful\Delivery\Client;
 
 final class ContentfulClient
 {
-	private $deliveryClient;
+    private $deliveryClient;
 
-	public function __construct(Client $deliveryClient)
-	{
-		$this->deliveryClient = $deliveryClient;
-	}
+    public function __construct(Client $deliveryClient)
+    {
+        $this->deliveryClient = $deliveryClient;
+    }
 
-	public function ping()
-	{
-		try{
-			$result = $this->deliveryClient->getContentTypes();
-		} catch (\Exception $exception) {
-			return false;
-		}
+    public function ping()
+    {
+        try {
+            $this->deliveryClient->getContentTypes();
+        } catch (\Exception $exception) {
+            return false;
+        }
 
-		return true;
-	}
+        return true;
+    }
 }
