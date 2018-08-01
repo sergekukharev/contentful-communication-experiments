@@ -5,6 +5,7 @@ namespace Sergekukharev\CCP\Integration\Contentful;
 use Contentful\Delivery\Client;
 use PHPUnit\Framework\TestCase;
 use Sergekukharev\CCP\Contentful\ContentfulClient;
+use Sergekukharev\CCP\Domain\Experiments\ExperimentInterface;
 
 class ContentfulClientTest extends TestCase
 {
@@ -37,4 +38,15 @@ class ContentfulClientTest extends TestCase
 
 		self::assertFalse($misconfiguredClient->ping());
 	}
+
+    public function testCanGetActiveSubjectExperiments(): void
+    {
+        $activeExperiments = $this->client->getActiveSubjectExperiments();
+
+        self::assertGreaterThan(0, $activeExperiments);
+
+        foreach ($activeExperiments as $experiment){
+            self::assertInstanceOf(ExperimentInterface::class, $experiment);
+        }
+    }
 }

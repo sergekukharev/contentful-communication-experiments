@@ -1,8 +1,9 @@
 <?php
 
-namespace Sergekukharev\CCP\Domain;
+namespace Sergekukharev\CCP\Domain\Experiments;
 
 use PHPUnit\Framework\TestCase;
+use Sergekukharev\CCP\Domain\Email;
 
 class EmailTest extends TestCase
 {
