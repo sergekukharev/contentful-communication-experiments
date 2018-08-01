@@ -6,7 +6,7 @@ Start your PHP projects quickly
 To quickly start using this boilerplate project:
 
 ```
-git clone https://serge_kukharev@bitbucket.org/serge_kukharev/php-project-boilerplate.git .
+git clone https://github.com/sergekukharev/php-project-boilerplate.git .
 git remote remove origin
 composer install
 echo "Done!"
