@@ -1,13 +1,3 @@
-# php-project-boilerplate
-Start your PHP projects quickly
-
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-
-To quickly start using this boilerplate project:
-
-```
-git clone https://github.com/sergekukharev/php-project-boilerplate.git .
-git remote remove origin
-composer install
-echo "Done!"
-```
+# Contentful Communication Platform experiments
+PoC for using Contentful to define A/B experiments for different communication channels, like  
+emails and push notifications.
