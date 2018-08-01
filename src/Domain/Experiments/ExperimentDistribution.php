@@ -1,8 +1,6 @@
 <?php
 
-
 namespace Sergekukharev\CCP\Domain\Experiments;
-
 
 use Webmozart\Assert\Assert;
 

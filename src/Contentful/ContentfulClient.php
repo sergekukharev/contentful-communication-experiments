@@ -10,7 +10,7 @@ use Sergekukharev\CCP\Domain\Experiments\SubjectExperiment;
 
 final class ContentfulClient
 {
-    const SUBJECT_EXPERIMENT = 'experimentSubjectLine';
+    private const SUBJECT_EXPERIMENT = 'experimentSubjectLine';
     private $deliveryClient;
 
     public function __construct(Client $deliveryClient)
@@ -29,7 +29,10 @@ final class ContentfulClient
         return true;
     }
 
-    public function getActiveSubjectExperiments()
+    /**
+     * @return SubjectExperiment[]
+     */
+    public function getActiveSubjectExperiments(): array
     {
         $query = new Query();
         $query->setContentType(self::SUBJECT_EXPERIMENT);
@@ -44,11 +47,9 @@ final class ContentfulClient
             $distributionA = $rawExperiment['startingExperimentDistribution']['distributionA'];
             $distributionB = $rawExperiment['startingExperimentDistribution']['distributionB'];
 
-            $experimentDistribution = new ExperimentDistribution($distributionA, $distributionB);
-
             $experiments[] = new SubjectExperiment(
                 $rawExperiment['experimentName']['name'],
-                $experimentDistribution,
+                new ExperimentDistribution($distributionA, $distributionB),
                 $rawExperiment['subjectLineInBVariation']
             );
         }

@@ -1,3 +1,5 @@
 /vendor/
 test.php
 .env
+
+/.idea/workspace.xml
