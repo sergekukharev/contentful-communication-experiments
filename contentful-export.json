@@ -1,0 +1,1783 @@
+{
+  "contentTypes": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "h2s1xutqnyvb"
+          }
+        },
+        "id": "experimentSubjectLine",
+        "type": "ContentType",
+        "createdAt": "2018-08-01T08:46:43.859Z",
+        "updatedAt": "2018-08-01T14:03:16.036Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "30weeOliGEYwlY7mPIvIss"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "30weeOliGEYwlY7mPIvIss"
+          }
+        },
+        "publishedCounter": 6,
+        "version": 12,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "30weeOliGEYwlY7mPIvIss"
+          }
+        },
+        "publishedVersion": 11,
+        "firstPublishedAt": "2018-08-01T08:46:44.270Z",
+        "publishedAt": "2018-08-01T14:03:16.036Z"
+      },
+      "displayField": "subjectLineInBVariation",
+      "name": "Experiment - Subject Line",
+      "description": "Experiment with subject line of the message",
+      "fields": [
+        {
+          "id": "experimentName",
+          "name": "Experiment Name",
+          "type": "Link",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "linkContentType": [
+                "experimentName"
+              ]
+            }
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry"
+        },
+        {
+          "id": "subjectLineInBVariation",
+          "name": "Subject Line in B variation",
+          "type": "Symbol",
+          "localized": true,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "startingExperimentDistribution",
+          "name": "Starting Experiment Distribution",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "linkContentType": [
+                "experimentDistribution"
+              ]
+            }
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "h2s1xutqnyvb"
+          }
+        },
+        "id": "experimentName",
+        "type": "ContentType",
+        "createdAt": "2018-08-01T08:53:04.800Z",
+        "updatedAt": "2018-08-01T09:00:18.749Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "30weeOliGEYwlY7mPIvIss"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "30weeOliGEYwlY7mPIvIss"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "30weeOliGEYwlY7mPIvIss"
+          }
+        },
+        "publishedVersion": 3,
+        "firstPublishedAt": "2018-08-01T08:53:05.262Z",
+        "publishedAt": "2018-08-01T09:00:18.749Z"
+      },
+      "displayField": "name",
+      "name": "Experiment Name",
+      "description": "Name of the experiment",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "unique": true
+            },
+            {
+              "regexp": {
+                "pattern": "^[a-zA-Z_\\-][a-zA-Z_\\-0-9]*$",
+                "flags": null
+              },
+              "message": "The experiment name is invalid"
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "h2s1xutqnyvb"
+          }
+        },
+        "id": "experimentDistribution",
+        "type": "ContentType",
+        "createdAt": "2018-08-01T08:58:09.162Z",
+        "updatedAt": "2018-08-01T08:58:09.529Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "30weeOliGEYwlY7mPIvIss"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "30weeOliGEYwlY7mPIvIss"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "30weeOliGEYwlY7mPIvIss"
+          }
+        },
+        "publishedVersion": 1,
+        "firstPublishedAt": "2018-08-01T08:58:09.529Z",
+        "publishedAt": "2018-08-01T08:58:09.529Z"
+      },
+      "displayField": null,
+      "name": "Starting Experiment Distribution",
+      "description": "Distribution of users between A and B variations",
+      "fields": [
+        {
+          "id": "distributionA",
+          "name": "Distribution A",
+          "type": "Integer",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "range": {
+                "min": 0,
+                "max": 100
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "distributionB",
+          "name": "Distribution B",
+          "type": "Integer",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "range": {
+                "min": 0,
+                "max": 100
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "h2s1xutqnyvb"
+          }
+        },
+        "id": "emailLayoutHeader",
+        "type": "ContentType",
+        "createdAt": "2018-08-01T14:17:48.283Z",
+        "updatedAt": "2018-08-01T14:17:48.664Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "30weeOliGEYwlY7mPIvIss"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "30weeOliGEYwlY7mPIvIss"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "30weeOliGEYwlY7mPIvIss"
+          }
+        },
+        "publishedVersion": 1,
+        "firstPublishedAt": "2018-08-01T14:17:48.664Z",
+        "publishedAt": "2018-08-01T14:17:48.664Z"
+      },
+      "displayField": "title",
+      "name": "Email Layout - Header",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "backgroundImage",
+          "name": "Background Image",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "linkMimetypeGroup": [
+                "image"
+              ]
+            },
+            {
+              "assetImageDimensions": {
+                "width": {
+                  "min": 1000,
+                  "max": null
+                },
+                "height": {
+                  "min": 300,
+                  "max": null
+                }
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "h2s1xutqnyvb"
+          }
+        },
+        "id": "emailLayoutFooter",
+        "type": "ContentType",
+        "createdAt": "2018-08-01T14:18:07.056Z",
+        "updatedAt": "2018-08-01T14:18:07.472Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "30weeOliGEYwlY7mPIvIss"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "30weeOliGEYwlY7mPIvIss"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "30weeOliGEYwlY7mPIvIss"
+          }
+        },
+        "publishedVersion": 1,
+        "firstPublishedAt": "2018-08-01T14:18:07.472Z",
+        "publishedAt": "2018-08-01T14:18:07.472Z"
+      },
+      "displayField": "title",
+      "name": "Email Layout - Footer",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "backgroundImage",
+          "name": "Background Image",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "linkMimetypeGroup": [
+                "image"
+              ]
+            },
+            {
+              "assetImageDimensions": {
+                "width": {
+                  "min": 1000,
+                  "max": null
+                },
+                "height": {
+                  "min": 300,
+                  "max": null
+                }
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "h2s1xutqnyvb"
+          }
+        },
+        "id": "emailLayoutSimilarRecommendations",
+        "type": "ContentType",
+        "createdAt": "2018-08-01T14:27:46.274Z",
+        "updatedAt": "2018-08-01T14:35:48.628Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "30weeOliGEYwlY7mPIvIss"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "30weeOliGEYwlY7mPIvIss"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "30weeOliGEYwlY7mPIvIss"
+          }
+        },
+        "publishedVersion": 3,
+        "firstPublishedAt": "2018-08-01T14:27:46.615Z",
+        "publishedAt": "2018-08-01T14:35:48.628Z"
+      },
+      "displayField": "type",
+      "name": "Email Layout - Similar Recommendations",
+      "description": "",
+      "fields": [
+        {
+          "id": "type",
+          "name": "Similar to",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "in": [
+                "specific tour",
+                "previous bookings",
+                "tour category"
+              ]
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "locationType",
+          "name": "Location type",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "in": [
+                "Any Location",
+                "Specific location"
+              ]
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "h2s1xutqnyvb"
+          }
+        },
+        "id": "emailLayoutFreeText",
+        "type": "ContentType",
+        "createdAt": "2018-08-01T14:28:28.322Z",
+        "updatedAt": "2018-08-01T14:28:28.726Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "30weeOliGEYwlY7mPIvIss"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "30weeOliGEYwlY7mPIvIss"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "30weeOliGEYwlY7mPIvIss"
+          }
+        },
+        "publishedVersion": 1,
+        "firstPublishedAt": "2018-08-01T14:28:28.726Z",
+        "publishedAt": "2018-08-01T14:28:28.726Z"
+      },
+      "displayField": "text",
+      "name": "Email Layout - Free Text",
+      "description": "",
+      "fields": [
+        {
+          "id": "text",
+          "name": "text",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "h2s1xutqnyvb"
+          }
+        },
+        "id": "emailLayout",
+        "type": "ContentType",
+        "createdAt": "2018-08-01T14:30:10.852Z",
+        "updatedAt": "2018-08-01T14:30:46.959Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "30weeOliGEYwlY7mPIvIss"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "30weeOliGEYwlY7mPIvIss"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "30weeOliGEYwlY7mPIvIss"
+          }
+        },
+        "publishedVersion": 3,
+        "firstPublishedAt": "2018-08-01T14:30:11.250Z",
+        "publishedAt": "2018-08-01T14:30:46.959Z"
+      },
+      "displayField": "layoutName",
+      "name": "Email Layout",
+      "description": "",
+      "fields": [
+        {
+          "id": "layoutName",
+          "name": "Layout Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "elements",
+          "name": "Elements",
+          "type": "Array",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "emailLayoutFooter",
+                  "emailLayoutFreeText",
+                  "emailLayoutHeader",
+                  "emailLayoutSimilarRecommendations",
+                  "emailLayoutFragment"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "h2s1xutqnyvb"
+          }
+        },
+        "id": "emailLayoutFragment",
+        "type": "ContentType",
+        "createdAt": "2018-08-01T14:30:24.399Z",
+        "updatedAt": "2018-08-01T14:30:24.811Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "30weeOliGEYwlY7mPIvIss"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "30weeOliGEYwlY7mPIvIss"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "30weeOliGEYwlY7mPIvIss"
+          }
+        },
+        "publishedVersion": 1,
+        "firstPublishedAt": "2018-08-01T14:30:24.811Z",
+        "publishedAt": "2018-08-01T14:30:24.811Z"
+      },
+      "displayField": "layoutName",
+      "name": "Email Layout Fragment",
+      "description": "",
+      "fields": [
+        {
+          "id": "layoutName",
+          "name": "Layout Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "elements",
+          "name": "Elements",
+          "type": "Array",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "emailLayoutFooter",
+                  "emailLayoutFreeText",
+                  "emailLayoutHeader",
+                  "emailLayoutSimilarRecommendations"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "h2s1xutqnyvb"
+          }
+        },
+        "id": "experimentEmailLayout",
+        "type": "ContentType",
+        "createdAt": "2018-08-01T14:39:16.509Z",
+        "updatedAt": "2018-08-01T14:39:16.846Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "30weeOliGEYwlY7mPIvIss"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "30weeOliGEYwlY7mPIvIss"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "30weeOliGEYwlY7mPIvIss"
+          }
+        },
+        "publishedVersion": 1,
+        "firstPublishedAt": "2018-08-01T14:39:16.846Z",
+        "publishedAt": "2018-08-01T14:39:16.846Z"
+      },
+      "displayField": "originalEmailName",
+      "name": "Experiment - Email Layout",
+      "description": "",
+      "fields": [
+        {
+          "id": "experimentName",
+          "name": "Experiment Name",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "linkContentType": [
+                "experimentName"
+              ]
+            }
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry"
+        },
+        {
+          "id": "originalEmailName",
+          "name": "Original Email Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "variationBLayout",
+          "name": "Variation B Layout",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "linkContentType": [
+                "emailLayout"
+              ]
+            }
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry"
+        },
+        {
+          "id": "startingExperimentDistribution",
+          "name": "Starting Experiment Distribution",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "linkContentType": [
+                "experimentDistribution"
+              ]
+            }
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "h2s1xutqnyvb"
+          }
+        },
+        "id": "experimentFrequency",
+        "type": "ContentType",
+        "createdAt": "2018-08-01T14:41:38.079Z",
+        "updatedAt": "2018-08-01T14:41:38.702Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "30weeOliGEYwlY7mPIvIss"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "30weeOliGEYwlY7mPIvIss"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "30weeOliGEYwlY7mPIvIss"
+          }
+        },
+        "publishedVersion": 1,
+        "firstPublishedAt": "2018-08-01T14:41:38.702Z",
+        "publishedAt": "2018-08-01T14:41:38.702Z"
+      },
+      "displayField": "originalEmailName",
+      "name": "Experiment - Frequency",
+      "description": "",
+      "fields": [
+        {
+          "id": "originalEmailName",
+          "name": "Original Email Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "maxFrequency",
+          "name": "Max Frequency in Variation B",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "h2s1xutqnyvb"
+          }
+        },
+        "id": "experimentComplex",
+        "type": "ContentType",
+        "createdAt": "2018-08-01T14:43:27.383Z",
+        "updatedAt": "2018-08-01T14:43:27.820Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "30weeOliGEYwlY7mPIvIss"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "30weeOliGEYwlY7mPIvIss"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "30weeOliGEYwlY7mPIvIss"
+          }
+        },
+        "publishedVersion": 1,
+        "firstPublishedAt": "2018-08-01T14:43:27.820Z",
+        "publishedAt": "2018-08-01T14:43:27.820Z"
+      },
+      "displayField": null,
+      "name": "Experiment - Complex",
+      "description": "",
+      "fields": [
+        {
+          "id": "experimentName",
+          "name": "Experiment Name",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "linkContentType": [
+                "experimentName"
+              ]
+            }
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry"
+        },
+        {
+          "id": "experiments",
+          "name": "Experiments",
+          "type": "Array",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "size": {
+                "min": 2
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "experimentEmailLayout",
+                  "experimentFrequency",
+                  "experimentSubjectLine"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        }
+      ]
+    }
+  ],
+  "editorInterfaces": [
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "h2s1xutqnyvb",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 12,
+        "createdAt": "2018-08-01T08:46:44.448Z",
+        "createdBy": {
+          "sys": {
+            "id": "30weeOliGEYwlY7mPIvIss",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2018-08-01T14:03:16.938Z",
+        "updatedBy": {
+          "sys": {
+            "id": "30weeOliGEYwlY7mPIvIss",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "experimentSubjectLine",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "experimentName",
+          "widgetId": "entryLinkEditor"
+        },
+        {
+          "fieldId": "subjectLineInBVariation",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "startingExperimentDistribution",
+          "widgetId": "entryLinkEditor"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "h2s1xutqnyvb",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 4,
+        "createdAt": "2018-08-01T08:53:05.425Z",
+        "createdBy": {
+          "sys": {
+            "id": "30weeOliGEYwlY7mPIvIss",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2018-08-01T09:00:19.442Z",
+        "updatedBy": {
+          "sys": {
+            "id": "30weeOliGEYwlY7mPIvIss",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "experimentName",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "name",
+          "widgetId": "slugEditor"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "h2s1xutqnyvb",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2018-08-01T08:58:09.643Z",
+        "createdBy": {
+          "sys": {
+            "id": "30weeOliGEYwlY7mPIvIss",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2018-08-01T08:58:10.340Z",
+        "updatedBy": {
+          "sys": {
+            "id": "30weeOliGEYwlY7mPIvIss",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "experimentDistribution",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "distributionA",
+          "widgetId": "numberEditor"
+        },
+        {
+          "fieldId": "distributionB",
+          "widgetId": "numberEditor"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "h2s1xutqnyvb",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2018-08-01T14:17:48.777Z",
+        "createdBy": {
+          "sys": {
+            "id": "30weeOliGEYwlY7mPIvIss",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2018-08-01T14:17:49.558Z",
+        "updatedBy": {
+          "sys": {
+            "id": "30weeOliGEYwlY7mPIvIss",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "emailLayoutHeader",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "backgroundImage",
+          "widgetId": "assetLinkEditor"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "h2s1xutqnyvb",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2018-08-01T14:18:07.637Z",
+        "createdBy": {
+          "sys": {
+            "id": "30weeOliGEYwlY7mPIvIss",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2018-08-01T14:18:08.191Z",
+        "updatedBy": {
+          "sys": {
+            "id": "30weeOliGEYwlY7mPIvIss",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "emailLayoutFooter",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "backgroundImage",
+          "widgetId": "assetLinkEditor"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "h2s1xutqnyvb",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 4,
+        "createdAt": "2018-08-01T14:27:46.734Z",
+        "createdBy": {
+          "sys": {
+            "id": "30weeOliGEYwlY7mPIvIss",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2018-08-01T14:35:49.450Z",
+        "updatedBy": {
+          "sys": {
+            "id": "30weeOliGEYwlY7mPIvIss",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "emailLayoutSimilarRecommendations",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "type",
+          "widgetId": "dropdown"
+        },
+        {
+          "fieldId": "locationType",
+          "widgetId": "dropdown"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "h2s1xutqnyvb",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2018-08-01T14:28:28.853Z",
+        "createdBy": {
+          "sys": {
+            "id": "30weeOliGEYwlY7mPIvIss",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2018-08-01T14:28:29.401Z",
+        "updatedBy": {
+          "sys": {
+            "id": "30weeOliGEYwlY7mPIvIss",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "emailLayoutFreeText",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "text",
+          "widgetId": "markdown"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "h2s1xutqnyvb",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 4,
+        "createdAt": "2018-08-01T14:30:11.368Z",
+        "createdBy": {
+          "sys": {
+            "id": "30weeOliGEYwlY7mPIvIss",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2018-08-01T14:30:47.581Z",
+        "updatedBy": {
+          "sys": {
+            "id": "30weeOliGEYwlY7mPIvIss",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "emailLayout",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "layoutName",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "elements",
+          "settings": {
+            "helpText": "Please add and order layout elements",
+            "bulkEditing": false
+          },
+          "widgetId": "entryLinksEditor"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "h2s1xutqnyvb",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2018-08-01T14:30:24.971Z",
+        "createdBy": {
+          "sys": {
+            "id": "30weeOliGEYwlY7mPIvIss",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2018-08-01T14:30:26.068Z",
+        "updatedBy": {
+          "sys": {
+            "id": "30weeOliGEYwlY7mPIvIss",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "emailLayoutFragment",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "layoutName",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "elements",
+          "settings": {
+            "helpText": "Please add and order layout elements",
+            "bulkEditing": false
+          },
+          "widgetId": "entryLinksEditor"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "h2s1xutqnyvb",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2018-08-01T14:39:16.977Z",
+        "createdBy": {
+          "sys": {
+            "id": "30weeOliGEYwlY7mPIvIss",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2018-08-01T14:39:17.518Z",
+        "updatedBy": {
+          "sys": {
+            "id": "30weeOliGEYwlY7mPIvIss",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "experimentEmailLayout",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "experimentName",
+          "widgetId": "entryLinkEditor"
+        },
+        {
+          "fieldId": "originalEmailName",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "variationBLayout",
+          "widgetId": "entryLinkEditor"
+        },
+        {
+          "fieldId": "startingExperimentDistribution",
+          "widgetId": "entryLinkEditor"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "h2s1xutqnyvb",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2018-08-01T14:41:38.867Z",
+        "createdBy": {
+          "sys": {
+            "id": "30weeOliGEYwlY7mPIvIss",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2018-08-01T14:41:39.473Z",
+        "updatedBy": {
+          "sys": {
+            "id": "30weeOliGEYwlY7mPIvIss",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "experimentFrequency",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "originalEmailName",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "maxFrequency",
+          "settings": {
+            "helpText": "How often can we send this type of message to the customer"
+          },
+          "widgetId": "singleLine"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "h2s1xutqnyvb",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2018-08-01T14:43:27.928Z",
+        "createdBy": {
+          "sys": {
+            "id": "30weeOliGEYwlY7mPIvIss",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2018-08-01T14:43:28.506Z",
+        "updatedBy": {
+          "sys": {
+            "id": "30weeOliGEYwlY7mPIvIss",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "experimentComplex",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "experimentName",
+          "widgetId": "entryLinkEditor"
+        },
+        {
+          "fieldId": "experiments",
+          "settings": {
+            "bulkEditing": false
+          },
+          "widgetId": "entryLinksEditor"
+        }
+      ]
+    }
+  ],
+  "locales": [
+    {
+      "name": "English (United States)",
+      "code": "en-US",
+      "fallbackCode": null,
+      "default": true,
+      "contentManagementApi": true,
+      "contentDeliveryApi": true,
+      "optional": false,
+      "sys": {
+        "type": "Locale",
+        "id": "47RIHVZP8E6DTMYHOejh4i",
+        "version": 1,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "h2s1xutqnyvb"
+          }
+        },
+        "environment": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Environment",
+            "id": "master"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "30weeOliGEYwlY7mPIvIss"
+          }
+        },
+        "createdAt": "2018-07-31T15:22:58Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "30weeOliGEYwlY7mPIvIss"
+          }
+        },
+        "updatedAt": "2018-07-31T15:22:58Z"
+      }
+    }
+  ]
+}
