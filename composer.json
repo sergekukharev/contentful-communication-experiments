@@ -3,7 +3,9 @@
   "description": "Start your PHP projects quickly",
   "type": "project",
   "require": {
-    "php": ">=7.2"
+    "php": ">=7.2",
+    "contentful/contentful": "^3.3",
+    "vlucas/phpdotenv": "^2.5"
   },
   "require-dev": {
     "phpunit/phpunit": "^7.2",
@@ -12,12 +14,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Sergekukharev\\ProjectNamespace\\": "src/"
+      "Sergekukharev\\CCP\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Sergekukharev\\ProjectNamespace\\": "test/"
+      "Sergekukharev\\CCP\\": "test/"
     }
   },
   "license": "Apache License 2.0",
